@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "username": "alex",
+      "password": "123",
+      "role": "admininistracion"
+    },
+    {
+      "username": "ivan",
+      "password": "123",
+      "role": "usuario"
+    },
+    {
+      "username": "jesi",
+      "password": "123",
+      "role": "visitante"
+    },
+    {
+      "username": "oscar",
+      "password": "123",
+      "role": "gestor"
+    },
+    {
+      "username": "raul",
+      "password": "123",
+      "role": "supervisor"
+    }
+  ]
+}

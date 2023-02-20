@@ -1,0 +1,9 @@
+<form class="login-form" (ngSubmit)="onSubmit(username.value, password.value)">
+  <div class="form-group">
+    <input type="text" placeholder="Usuario" id="username" name="username" class="form-control" #username>
+  </div>
+  <div class="form-group">
+    <input type="password" placeholder="Contraseña" id="password" name="password" class="form-control" #password>
+  </div>
+  <button type="submit" class="btn btn-primary">Entrar</button>
+</form>
