@@ -1,0 +1,6 @@
+comandos para la aplicacion de angular
+
+Levanta el servidor:
+ng serve 
+
+

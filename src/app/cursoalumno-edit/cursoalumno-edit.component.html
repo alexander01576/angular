@@ -1,0 +1,24 @@
+<h2>Agregar Calificación</h2>
+<form (submit)="agregarCalificacion()">
+    <label for="curso">Curso:</label>
+    <select id="curso" name="curso" [(ngModel)]="curso_id" required>
+        <option value="">Selecciona un curso</option>
+        <option *ngFor="let curso of cursos" [value]="curso.id">{{ curso.nombre }}</option>
+    </select>
+    <label for="alumno">Alumno:</label>
+    <select id="alumno" name="alumno" [(ngModel)]="alumno_id">
+        <option value="">Selecciona un alumno</option>
+        <option *ngFor="let alumno of alumnos" [value]="alumno.id">{{ alumno.nombre }}</option>
+    </select>
+
+    <label for="calificacion">Calificación:</label>
+    <input type="number" id="calificacion" name="calificacion" [(ngModel)]="calificacion" required>
+
+    <button type="submit">Agregar</button>
+
+    <div *ngIf="formularioCalificacion.invalid && (formularioCalificacion.dirty || formularioCalificacion.touched)">
+        <div *ngIf="formularioCalificacion.controls.curso_id.invalid">El campo "Curso" es requerido</div>
+        <div *ngIf="formularioCalificacion.controls.alumno_id.invalid">El campo "Alumno" es requerido</div>
+        <div *ngIf="formularioCalificacion.controls.calificacion.invalid">El campo "Calificación" es requerido</div>
+    </div>
+</form>

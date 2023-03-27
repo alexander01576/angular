@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center my-4">Listado de Alumnos</h1>
+            <button class="editar" [routerLink]="['/cursoalumno-edit']">Agregar calificacion</button>
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>ID Alumno</th>
+                        <th>ID Curso</th>
+                        <th>Calificacion</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let curso of cursosalumno">
+                        <td>{{ curso.id }}</td>
+                        <td>{{ curso.alumno_id }}</td>
+                        <td>{{ curso.curso_id }}</td>
+                        <td>{{ curso.calificacion }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

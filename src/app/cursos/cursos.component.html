@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center my-4">Listado de cursos</h1>
+            <button class="editar" [routerLink]="['/cursosEdit']">Agregar curso</button>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Fecha de inicio</th>
+                        <th>Fecha de fin</th>
+                        <th>Horas</th>
+                        <th>Costo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let curso of cursos">
+                        <td>{{ curso.id }}</td>
+                        <td>{{ curso.nombre }}</td>
+                        <td>{{ curso.fecha_inicio }}</td>
+                        <td>{{ curso.fecha_fin }}</td>
+                        <td>{{ curso.horas }}</td>
+                        <td>{{ curso.costo }}</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-info mr-2" [routerLink]="['/cursosEdit']"
+                                    [queryParams]="{id: curso.id}">Editar</button>
+                                <button class="btn btn-danger" (click)="eliminarCurso(curso.id)">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

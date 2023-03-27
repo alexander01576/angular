@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Consultar Informacion Alumno</h2>
+
+    <input type="text" [(ngModel)]="matricula" placeholder="Ingresa una matrícula">
+    <button (click)="consultarMatricula()">Consultar</button>
+    <button class="editar" [routerLink]="['']">Regresar</button>
+
+
+    <div *ngIf="datosDisponibles">
+        <p>Nombre: {{ resultado.nombre }}</p>
+        <p>Matricula: {{ resultado.matricula }}</p>
+        <p>Edad: {{ resultado.edad }}</p>
+        <p>ID Alumno: {{ resultado.id }}</p>
+
+    </div>
+
+    <div *ngIf="!datosDisponibles">
+        <p>Sin datos</p>
+    </div>
+</div>

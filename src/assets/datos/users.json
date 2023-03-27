@@ -3,27 +3,22 @@
     {
       "username": "alex",
       "password": "123",
-      "role": "admininistracion"
+      "role": "admin"
+    },
+    {
+      "username": "isai",
+      "password": "123",
+      "role": "user"
     },
     {
       "username": "ivan",
       "password": "123",
-      "role": "usuario"
+      "role": "user"
     },
     {
-      "username": "jesi",
+      "username": "paco",
       "password": "123",
-      "role": "visitante"
-    },
-    {
-      "username": "oscar",
-      "password": "123",
-      "role": "gestor"
-    },
-    {
-      "username": "raul",
-      "password": "123",
-      "role": "supervisor"
+      "role": "user"
     }
   ]
 }

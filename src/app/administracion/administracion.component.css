@@ -1,0 +1,6 @@
+/* En pantallas de 800px o menos, establece el ancho de todos los elementos con clase "row" al 100% */
+@media screen and (min-width: 393px) {
+  .row {
+    width: 100%;
+  }
+}

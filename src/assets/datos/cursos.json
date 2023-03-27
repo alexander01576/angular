@@ -1,0 +1,84 @@
+{
+    "cursos": [
+        {
+            "id": "1",
+            "nombre": "Introducción a la programación",
+            "fecha_inicio": "01/03/2023",
+            "fecha_fin": "30/04/2023",
+            "horas": "60",
+            "costo": "1500"
+        },
+        {
+            "id": "2",
+            "nombre": "Programación orientada a objetos",
+            "fecha_inicio": "15/03/2023",
+            "fecha_fin": "15/05/2023",
+            "horas": "40",
+            "costo": "1200"
+        },
+        {
+            "id": "3",
+            "nombre": "Desarrollo web con Angular",
+            "fecha_inicio": "01/04/2023",
+            "fecha_fin": "30/05/2023",
+            "horas": "50",
+            "costo": "1800"
+        },
+        {
+            "id": "4",
+            "nombre": "Introducción a la inteligencia artificial",
+            "fecha_inicio": "15/04/2023",
+            "fecha_fin": "30/05/2023",
+            "horas": "30",
+            "costo": "1000"
+        },
+        {
+            "id": "5",
+            "nombre": "Programación en Python",
+            "fecha_inicio": "01/05/2023",
+            "fecha_fin": "30/06/2023",
+            "horas": "60",
+            "costo": "1500"
+        },
+        {
+            "id": "6",
+            "nombre": "Desarrollo de aplicaciones móviles con React Native",
+            "fecha_inicio": "15/05/2023",
+            "fecha_fin": "30/06/2023",
+            "horas": "40",
+            "costo": "1400"
+        },
+        {
+            "id": "7",
+            "nombre": "Introducción a la ciberseguridad",
+            "fecha_inicio": "01/06/2023",
+            "fecha_fin": "30/06/2023",
+            "horas": "20",
+            "costo": "800"
+        },
+        {
+            "id": "8",
+            "nombre": "Desarrollo de juegos con Unity",
+            "fecha_inicio": "15/06/2023",
+            "fecha_fin": "30/07/2023",
+            "horas": "50",
+            "costo": "2000"
+        },
+        {
+            "id": "9",
+            "nombre": "Programación en C++",
+            "fecha_inicio": "01/07/2023",
+            "fecha_fin": "31/08/2023",
+            "horas": "80",
+            "costo": "2500"
+        },
+        {
+            "id": "10",
+            "nombre": "Desarrollo de aplicaciones web con Django",
+            "fecha_inicio": "15/07/2023",
+            "fecha_fin": "31/08/2023",
+            "horas": "60",
+            "costo": "1800"
+        }
+    ]
+}
